@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# Dynamic XML Builder with Composite and Fluid Interface Pattern
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project implements a Dynamic XML Builder using the Composite Pattern in React. It allows users to create, modify, and remove hierarchical data structures represented as XML elements. The system supports both composite nodes (which can have children) and leaf nodes (which are terminal nodes with text content).
+
+
+`Node v18.17.1` was used for this project
 
 ## Available Scripts
+`npm i` to install libraries
 
-In the project directory, you can run:
+`npm run start` to start, it should open on localhost:3000
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Create and manage hierarchical structures: Easily add and organize composite and leaf nodes in a tree-like structure.
+- Interactive UI: Add, edit, and remove nodes with a simple and intuitive interface.
+- Dynamic XML generation: As users modify the structure, an XML representation is dynamically generated and displayed.
+- Fluid Interface: A fluid, chaining interface is used to simplify node addition and manipulation.
 
-### `npm test`
+## How it works
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Composite Nodes: These nodes can have child nodes, and they can be further extended by adding other composite or leaf nodes.
+- Leaf Nodes: These terminal nodes hold text content and do not have any children.
+- XML Generation: The structure is converted into XML format, which is displayed in real time.
 
-### `npm run build`
+## Usage
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Add Leaf: Add a leaf node with a name and text content.
+- Add Composite: Add a composite node (a node that can have children).
+- Remove Node: Remove a node and all it's children from the hierarchy.
+- Edit Node: Modify the name and text (if leaf node) content of a node.
+- Remove All Children: Clear all child nodes of a composite node.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This project demonstrates the use of the Composite Pattern for managing complex tree structures and dynamically generating XML.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
